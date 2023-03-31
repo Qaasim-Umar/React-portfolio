@@ -1,0 +1,11 @@
+.profileimage{
+    border-top-right-radius:100%;
+    border-bottom-left-radius:90%;
+    border-top-left-radius:2%;
+    border-bottom-right-radius:55%;
+}
+
+.button-flex{
+display: flex;
+gap: 15px;
+}
