@@ -5,6 +5,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
+// import background from '../images/background.svg'
 // import profileImage from "../images/portfolioImg.jpg"
 import profileImage2 from "../images/profileimagewhite.png"
 import profileImage3 from "../images/profileimagenobackground.png"
@@ -50,13 +51,20 @@ const ProfComponent = () => {
         </Texts>
       </Slide>
       <Slide direction="right">
-        <Profile>
-          <img
-            className="profileimage"
-            src={profileImage3}
-            alt="profile"
-          />
-        </Profile>
+
+        
+        <div className='relative'>
+<svg className="octagon">
+  <rect width="1em" height="1em" />
+</svg>
+          <Profile>
+            <img
+              className="profileimage"
+              src={profileImage3}
+              alt="profile"
+            />
+          </Profile>
+        </div>
       </Slide>
     </Container>
   );
@@ -159,7 +167,7 @@ const Profile = styled.div`
     width: 25rem;
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
-    background-color:#01be96;
+  
     @media (max-width: 790px) {
       width: 20rem;
     }
