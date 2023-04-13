@@ -26,7 +26,7 @@ const ProfComponent = () => {
           </p>
           <div className="button-flex">
             <a href="https://wa.link/20ozs4"> <button>Let's talk</button></a>
-            <a href="https://wa.link/20ozs4"> <button>View Resume</button></a>
+            <a href="https://docs.google.com/document/d/1Xy4U1JzrQJv6d50ubme6S9kK_KY5ETibF5mQ5V3JHlk/edit?usp=sharing"> <button>View Resume</button></a>
           </div>
           <Social>
             <p>Check out my</p>
