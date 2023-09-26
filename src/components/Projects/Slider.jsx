@@ -8,6 +8,10 @@ import piggyvest from '../images/piggyvest.png'
 import devcareer from '../images/devcareer.png'
 import metabnb from '../images/metabnb.png'
 import movie from '../images/movie.png'
+import payment from '../images/payment.png'
+import postcode from '../images/postcode.png'
+import reactmovie from '../images/Reactmovie.png'
+import gallery from '../images/gallery.png'
 
 let data = [
   {
@@ -35,6 +39,26 @@ let data = [
     img: movie,
     disc: "Movielist is a two pages website that retrives infomation and trailer clips of movies from an api ",
     demo: "https://l4d-q-movie-app.netlify.app"
+  },
+  {
+    img: payment,
+    disc: "Pay by card is a one page app that accepts infomation and displays an alert once some conditions are met ",
+    demo: "https://zuricdt-2.netlify.app"
+  },
+  {
+    img: gallery,
+    disc: "This an online gallery app that allows a user to rearrange picures",
+    demo: "https://hng-x3galleryapp.netlify.app"
+  },
+  {
+    img: postcode,
+    disc: "This is a redesign of the checkmypostcode webbsite",
+    demo: "https://zuri-3postalcodewebsite.netlify.app"
+  },
+  {
+    img: reactmovie,
+    disc: "Wakallery is a web website that retrives infomation and trailer images of movies from the popular IMDB api ",
+    demo: "https://hngx-2movieapp.netlify.app"
   }
 ];
 

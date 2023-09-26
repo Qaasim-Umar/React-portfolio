@@ -5,9 +5,6 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-// import background from '../images/background.svg'
-// import profileImage from "../images/portfolioImg.jpg"
-import profileImage2 from "../images/profileimagewhite.png"
 import profileImage3 from "../images/profileimagenobackground.png"
 
 

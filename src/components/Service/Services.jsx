@@ -20,7 +20,7 @@ const Services = () => {
           <Card
             Icon={MdDesignServices}
             title={"Skills"}
-            disc={`REACTJS - TAILWIND - SASS - CSS3 - GIT - GITHUB`}
+            disc={`REACTJS - NEXTJS -CSS3 - TAILWIND - SASS - GIT `}
           />
         </Slide>
         <Slide direction="up">
