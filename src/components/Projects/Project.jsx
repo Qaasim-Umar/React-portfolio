@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 
 const Project = (props) => {
-    const { img, disc, demo } = props.item;
+    const { img, disc, demo, stacks } = props.item;
     return (
         <Container className='project'>
             <img src={img} alt="project" />
@@ -12,6 +12,10 @@ const Project = (props) => {
                 <h1>Description</h1>
                 <p>{disc}
                     <a href={demo}>demo</a>
+                    <br />
+                    <br />
+                    <span>Stacks  :</span>
+                    <span>{stacks}</span>
                 </p>
             </div>
         </Container>
@@ -21,7 +25,7 @@ const Project = (props) => {
 export default Project;
 
 const Container = styled.div`
-    height: 10rem;
+    height: 12rem;
     background-color: #4e5156;
     margin: 0 0.5rem;
     padding: 0.5rem;
@@ -42,7 +46,7 @@ const Container = styled.div`
         bottom: -10rem;
         text-align: left;
         padding: 0.5rem;
-        background: linear-gradient(rgba(0,0,0, 0.100), rgba(0,0,0, 0.80));
+        background: #222222;
         transition: all 400ms ease-in-out;
         h1{
             font-size: 1rem;

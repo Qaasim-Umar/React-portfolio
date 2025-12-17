@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react'
 import Slider from 'react-slick';
 import Project from './Project';
@@ -7,8 +8,6 @@ import kingsmeal from '../images/kingsmeal.png'
 import piggyvest from '../images/piggyvest.png'
 import devcareer from '../images/devcareer.png'
 import metabnb from '../images/metabnb.png'
-import movie from '../images/movie.png'
-import payment from '../images/payment.png'
 import postcode from '../images/postcode.png'
 import reactmovie from '../images/Reactmovie.png'
 import gallery from '../images/gallery.png'
@@ -17,48 +16,47 @@ let data = [
   {
 
     img: devcareer,
-    disc: "Devcareer Blog is an almost cooked blog website of the popular Non profit Organization Devcareers built with React tailwind and style component",
-    demo: "https://testblogdev.netlify.app"
+    disc: "Devcareer Blog is an almost cooked blog website of the popular Non profit Organization Devcareers",
+    demo: "https://testblogdev.netlify.app",
+    stacks : " React and Styled Component"
   },
   {
     img: piggyvest,
-    disc: "Piggyvest is a direct clone of the popular piggyvest bank bulit with React and Css Module",
-    demo: "https://piggyvest-bella.netlify.app"
+    disc: "Piggyvest is a direct clone of the popular piggyvest Bank",
+    demo: "https://piggyvest-bella.netlify.app",
+    stacks : " React, Css Module and Sass"
   },
   {
     img: kingsmeal,
-    disc: "KingsMeal is a Resturant web application biult with react and Tailwind comprising of the Order, Cart and the Checkout page.  ",
-    demo: "https://kingsmeal.netlify.app"
+    disc: "KingsMeal is a Resturant web application comprising of the Order, Cart and the Checkout page.  ",
+    demo: "https://kingsmeal.netlify.app",
+    stacks : " React and Tailwind"
   },
   {
     img: metabnb,
     disc: "Metabnb is a dummy two pages hotel websites which uses nft for transactions ",
-    demo: "https://metabnbnft.netlify.app"
+    demo: "https://metabnbnft.netlify.app",
+    stacks : " React and Css"
   },
-  {
-    img: movie,
-    disc: "Movielist is a two pages website that retrives infomation and trailer clips of movies from an api ",
-    demo: "https://l4d-q-movie-app.netlify.app"
-  },
-  {
-    img: payment,
-    disc: "Pay by card is a one page app that accepts infomation and displays an alert once some conditions are met ",
-    demo: "https://zuricdt-2.netlify.app"
-  },
+
+  
   {
     img: gallery,
     disc: "This an online gallery app that allows a user to rearrange picures",
-    demo: "https://hng-x3galleryapp.netlify.app"
+    demo: "https://hng-x3galleryapp.netlify.app",
+    stacks : " React and Css "
   },
   {
     img: postcode,
-    disc: "This is a redesign of the checkmypostcode webbsite",
-    demo: "https://zuri-3postalcodewebsite.netlify.app"
+    disc: "This is a redesign of the checkmypostcode website",
+    demo: "https://zuri-3postalcodewebsite.netlify.app",
+     stacks : " React and Css "
   },
   {
     img: reactmovie,
     disc: "Wakallery is a web website that retrives infomation and trailer images of movies from the popular IMDB api ",
-    demo: "https://hngx-2movieapp.netlify.app"
+    demo: "https://hngx-2movieapp.netlify.app",
+     stacks : " React and Css "
   }
 ];
 
