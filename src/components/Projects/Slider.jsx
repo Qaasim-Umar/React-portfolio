@@ -4,15 +4,21 @@ import Slider from 'react-slick';
 import Project from './Project';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from 'styled-components';
+import assessly from '../images/assessly.png'
 import kingsmeal from '../images/kingsmeal.png'
 import piggyvest from '../images/piggyvest.png'
 import devcareer from '../images/devcareer.png'
 import metabnb from '../images/metabnb.png'
-import postcode from '../images/postcode.png'
 import reactmovie from '../images/Reactmovie.png'
 import gallery from '../images/gallery.png'
 
 let data = [
+  {
+    img: assessly,
+    disc: "Assessly is an AI modern web platform that helps students practice and prepare for exams through structured, interactive assessments.",
+    demo: "https://assessly-one.vercel.app/",
+    stacks: " Next.js, Tailwind and Supabase"
+  },
   {
 
     img: devcareer,
@@ -46,12 +52,7 @@ let data = [
     demo: "https://hng-x3galleryapp.netlify.app",
     stacks : " React and Css "
   },
-  {
-    img: postcode,
-    disc: "This is a redesign of the checkmypostcode website",
-    demo: "https://zuri-3postalcodewebsite.netlify.app",
-     stacks : " React and Css "
-  },
+
   {
     img: reactmovie,
     disc: "Wakallery is a web website that retrives infomation and trailer images of movies from the popular IMDB api ",
