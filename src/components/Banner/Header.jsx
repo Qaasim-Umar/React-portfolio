@@ -96,23 +96,32 @@ const Logo = styled.div`
 `
 const Nav = styled.div`
     @media(max-width:640px){
-        position: fixed;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         background-color: #01be96;
-        inset: 0;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        gap: 2rem;
-        font-weight: 700;
-        height: ${props => props.bar ? "100vh" : 0};
-        transition: height 400ms ease-in-out;
+        padding: ${props => props.bar ? "1rem 0" : "0"};
+        gap: 0.5rem;
+        font-weight: 500;
+        max-height: ${props => props.bar ? "300px" : "0"};
+        transition: max-height 400ms ease-in-out, padding 400ms ease-in-out;
         overflow: hidden;
         z-index: 100;
+        border-radius: 0 0 8px 8px;
+        box-shadow: ${props => props.bar ? "0 4px 6px rgba(0,0,0,0.1)" : "none"};
     }
     span{
         margin-left: 1rem;
+        @media(max-width:640px){
+            margin-left: 0;
+            padding: 0.8rem 1.5rem;
+            :hover{
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
         a{
             color: #fff;
             text-decoration: none;

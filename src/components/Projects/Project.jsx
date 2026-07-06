@@ -4,20 +4,25 @@ import styled from 'styled-components';
 
 
 const Project = (props) => {
-    const { img, disc, demo, stacks } = props.item;
+    const { img, disc, demo, stacks, title } = props.item;
     return (
         <Container className='project'>
-            <img src={img} alt="project" />
-            <div className="disc">
-                <h1>Description</h1>
-                <p>{disc}
-                    <a href={demo}>demo</a>
-                    <br />
-                    <br />
-                    <span>Stacks  :</span>
-                    <span>{stacks}</span>
-                </p>
-            </div>
+            <ImageWrapper>
+                <img src={img} alt={title} />
+                <Overlay>
+                    <a href={demo} target="_blank" rel="noopener noreferrer" className="view-btn">
+                        View Live Site →
+                    </a>
+                </Overlay>
+            </ImageWrapper>
+            <Content>
+                <h2>{title}</h2>
+                <p className="description">{disc}</p>
+                <TechStack>
+                    <span className="label">Tech Stack:</span>
+                    <span className="stack">{stacks}</span>
+                </TechStack>
+            </Content>
         </Container>
     )
 }
@@ -25,49 +30,116 @@ const Project = (props) => {
 export default Project;
 
 const Container = styled.div`
-    height: 12rem;
-    background-color: #4e5156;
-    margin: 0 0.5rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
+    background-color: #2d2d3a;
+    border-radius: 12px;
     overflow: hidden;
-    img{
+    transition: transform 400ms ease, box-shadow 400ms ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    :hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(1, 190, 150, 0.2);
+    }
+`
+
+const ImageWrapper = styled.div`
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background-color: #4e5156;
+    
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 400ms ease-in-out;
+        transition: transform 600ms ease;
     }
-    .disc{
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: -10rem;
-        text-align: left;
-        padding: 0.5rem;
-        background: #222222;
-        transition: all 400ms ease-in-out;
-        h1{
-            font-size: 1rem;
-        }
     
-        p{
-            width: 90%;
-            font-size: 0.8rem;
-            a{
-                margin-left: 0.4rem;
-                color: red;
-            }
+    :hover img {
+        transform: scale(1.08);
+    }
+`
+
+const Overlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 400ms ease;
+    
+    ${ImageWrapper}:hover & {
+        opacity: 1;
+    }
+    
+    .view-btn {
+        background-color: #01be96;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 300ms ease;
+        
+        :hover {
+            background-color: #00d4aa;
+            transform: scale(1.05);
         }
     }
+`
 
-    :hover > img{
-        transform: scale(1.3);
+const Content = styled.div`
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 1;
+    
+    h2 {
+        font-size: 1.3rem;
+        color: #01be96;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.3;
     }
-
-    :hover > .disc{
-        bottom: 0;
+    
+    .description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #d4d4d4;
+        margin: 0;
+        flex: 1;
     }
+`
 
+const TechStack = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
+    .label {
+        font-size: 0.75rem;
+        color: #01be96;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .stack {
+        font-size: 0.85rem;
+        color: #b4b4b4;
+        line-height: 1.4;
+    }
 `

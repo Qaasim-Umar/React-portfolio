@@ -16,7 +16,7 @@ const ProfComponent = () => {
           <h4>
             Hello <span className="green">I am</span>
           </h4>
-          <h1 className="green">Qaasim Omar</h1>
+          <h1 className="green">Qaasim Umar</h1>
           <h3>FrontEnd Developer</h3>
           <p>
             I'm a software engineer specializing in building ( and occasionally designing ) exceptional digital experience.

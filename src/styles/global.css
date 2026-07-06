@@ -1,8 +1,6 @@
 .profileimage{
     position: absolute;
     top: 0;
-    /* z-index: 50; */
-    /* background-image: url(../components/images/background.svg); */
 }
 
 .button-flex{

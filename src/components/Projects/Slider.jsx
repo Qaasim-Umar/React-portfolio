@@ -5,26 +5,38 @@ import Project from './Project';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from 'styled-components';
 import assessly from '../images/assessly.png'
+import scholaris from '../images/scholaris.png'
+import ecomwordslab from '../images/ecom.png'
+import albaahith from '../images/baahith.png'
 import kingsmeal from '../images/kingsmeal.png'
 import piggyvest from '../images/piggyvest.png'
-import devcareer from '../images/devcareer.png'
 import metabnb from '../images/metabnb.png'
-import reactmovie from '../images/Reactmovie.png'
 import gallery from '../images/gallery.png'
 
 let data = [
   {
-    img: assessly,
-    disc: "Assessly is an AI modern web platform that helps students practice and prepare for exams through structured, interactive assessments.",
-    demo: "https://assessly-one.vercel.app/",
-    stacks: " Next.js, Tailwind and Supabase"
+    img: scholaris,
+    disc: "Scholaris is a mobile-first web application that helps schools manage students, run CBT exams, and streamline administration.",
+    demo: "https://scholarishq.com",
+    stacks: " Next.js, Supabase, and Tailwind CSS"
   },
   {
-
-    img: devcareer,
-    disc: "Devcareer Blog is an almost cooked blog website of the popular Non profit Organization Devcareers",
-    demo: "https://testblogdev.netlify.app",
-    stacks : " React and Styled Component"
+    img: ecomwordslab,
+    disc: "EcomWords Lab is a professional copywriting agency website built to attract and convert e-commerce brands — featuring a clean, conversion-focused design.",
+    demo: "https://ecomwordslab.com",
+    stacks: " Next.js and Tailwind CSS"
+  },
+  {
+    img: albaahith,
+    disc: "Al Baahith Academy is an online learning platform offering Quran memorization, Tajweed, recitation, Arabic language, and Islamic Studies classes with qualified instructors available 24/7.",
+    demo: "https://www.albaahithacademy.com",
+    stacks: " Next.js and Tailwind CSS"
+  },
+  {
+    img: assessly,
+    disc: "Assessly is an AI modern web platform that helps students practice and prepare for exams through structured, interactive assessments.",
+    demo: "https://assessly.ng",
+    stacks: " Next.js, Tailwind and Supabase"
   },
   {
     img: piggyvest,
@@ -51,13 +63,6 @@ let data = [
     disc: "This an online gallery app that allows a user to rearrange picures",
     demo: "https://hng-x3galleryapp.netlify.app",
     stacks : " React and Css "
-  },
-
-  {
-    img: reactmovie,
-    disc: "Wakallery is a web website that retrives infomation and trailer images of movies from the popular IMDB api ",
-    demo: "https://hngx-2movieapp.netlify.app",
-     stacks : " React and Css "
   }
 ];
 
