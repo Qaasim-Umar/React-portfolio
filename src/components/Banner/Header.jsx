@@ -15,7 +15,7 @@ const Header = () => {
                 <span><a href="#service">Services</a></span>
                 <span><a href="#project">Projects</a></span>
                 <span><a href="#client">Testimonials</a></span>
-                <span><a href="#footer">Portfolio</a></span>
+                <span><a href="#footer">Get In Touch</a></span>
             </Nav>
             <div
                 onClick={() => setBar(!bar)}

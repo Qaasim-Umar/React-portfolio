@@ -18,6 +18,22 @@ gap: 15px;
   height: 400px;
 }
 
+@media (max-width: 640px) {
+  .octagon {
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    max-width: 90vw;
+    max-height: 90vw;
+  }
+  
+  .octagon rect {
+    font-size: 106px;
+    stroke-width: 234px;
+    transform: translate(117px, 117px);
+  }
+}
+
 .octagon rect {
   font-size: 106px;
   stroke-width: 234px;

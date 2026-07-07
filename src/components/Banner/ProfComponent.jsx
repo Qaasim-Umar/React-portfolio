@@ -5,7 +5,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-import profileImage3 from "../images/profileimagenobackground.png"
+import profileImage3 from "../images/hero.png"
 
 
 const ProfComponent = () => {
@@ -48,20 +48,12 @@ const ProfComponent = () => {
         </Texts>
       </Slide>
       <Slide direction="right">
-
-        
-        <div className='relative'>
-<svg className="octagon">
-  <rect width="1em" height="1em" />
-</svg>
-          <Profile>
-            <img
-              className="profileimage"
-              src={profileImage3}
-              alt="profile"
-            />
-          </Profile>
-        </div>
+        <Profile>
+          <img
+            src={profileImage3}
+            alt="profile"
+          />
+        </Profile>
       </Slide>
     </Container>
   );
@@ -160,21 +152,23 @@ const Social = styled.div`
   }
 `;
 const Profile = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   img {
-    width: 25rem;
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
   
-    @media (max-width: 790px) {
-      width: 20rem;
-    }
-
-    @media (max-width: 660px) {
-      width: 18rem;
+    @media (max-width: 840px) {
+      max-width: 380px;
     }
 
     @media (max-width: 640px) {
-      width: 100%;
+      max-width: 320px;
     }
   }
 
